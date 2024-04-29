@@ -93,7 +93,11 @@ def openChest(chest,player):
 
     newHealth = player.getHealth() + chest.getHealing()
     player.setHealth(newHealth)
-    chest.setHealing(0)
+    chest.sethealing(0)
 
-openChest(firstChest,player1)
+try:
+    openChest(firstChest,player1)
+except:
+    print("something went wrong")
+
 print("breakpoint")
